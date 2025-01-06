@@ -7,6 +7,9 @@ module.exports = {
         path: path.join(__dirname,"/dist"),
         filename: "index_bundle.js",
     },
+    watchOptions: {
+        ignored: /DumpStack\.log\.tmp|node_modules/,
+      },
     module:{
         rules: [
             {
